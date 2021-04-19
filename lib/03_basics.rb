@@ -23,3 +23,16 @@ def reverse_upcase_noLTA(chaine)
 
     
 end
+
+def array_42(a)
+    return a.include?(42)
+  end
+  
+  
+  def magic_array(a)
+    b = []
+    a.flatten.sort.uniq.each {|v| b << v * 2 if v % 3 != 0 }
+    return b
+  end
+
+    
