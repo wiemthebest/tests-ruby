@@ -12,3 +12,17 @@ def repeat(message, n = 2)
     end
     return result.strip
 end
+
+def start_of_word(string, nb)
+    string[0..nb-1]
+end
+
+def first_word(string)
+    string.partition(" ").first
+end
+
+def titleize(string)
+    string=string.capitalize #string.capitalize!
+    no_need = ["and", "the"]
+    string.split(" ").map {|word| no_need.include?(word) ? word : word.capitalize }.join(" ")
+end

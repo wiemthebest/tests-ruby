@@ -20,3 +20,11 @@ def multiply(a,b)
     eq = a * b
     return eq
 end
+
+def power (nb, nb1)
+    nb ** nb1
+end
+
+    def factorial (nb)
+        (1..nb).inject(:*) || 1
+end
